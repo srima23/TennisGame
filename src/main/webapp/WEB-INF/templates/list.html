@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+     body {
+    font-family: Arial, sans-serif;
+    background-color: #1f5f1a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background-color: rgb(147, 233, 154);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    height: 400px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  /* ... (existing styles) ... */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border: 2.5px solid darkgreen;
+    background-color:  #f2f2f2; ;
+  }
+  .controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .control-button {
+    margin: 0 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #19602d;
+    color: white;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #d6ea8d; /* Change color on hover */
+    color: black;
+  }
+ 
+</style>
+<title>Player Match History</title>
+</head>
+<body>
+<div class="container">
+  <h2>List Of Matches</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Match</th>
+        <th>Player A</th>
+        <th>Player B</th>
+        <th>Score A</th>
+        <th>Score B</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Player A</td>
+        <td>Player B</td>
+        <td>3</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Player A</td>
+        <td>Player B</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Player A</td>
+        <td>Player B</td>
+        <td>2</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Player A</td>
+        <td>Player B</td>
+        <td>2</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Player A</td>
+        <td>Player B</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <div class="controls">
+    <button class="control-button" id="prevButton">Previous</button>
+    <button class="control-button" id="playbackButton">Playback</button>
+    <button class="control-button" id="nextButton">Next</button>
+  </div>
+  
+</div>
+
+<script>
+  const prevButton = document.getElementById('prevButton');
+  const playbackButton = document.getElementById('playbackButton');
+  const nextButton = document.getElementById('nextButton');
+
+  // Add event listeners and logic for these buttons
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #83dad7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background-color: rgb(15, 90, 164);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 50px; /* Increased padding for more space */
+    text-align: center;
+    width: 400px; /* Adjusted width */
+    height: 300px;
+    margin: 0 auto
+  }
+  input, button {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button {
+    background-color: #db3445;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 40px;
+    
+  }
+  button:hover {
+    background-color: #e47893; /* Change color on hover */
+  }
+
+  input{
+    margin-top: 30px;
+    margin-bottom: 7px;
+  }
+  #show{
+    margin-top: 8px;
+
+  }
+</style>
+<title>Player Recording</title>
+</head>
+<body>
+<div class="container">
+  <h2>Welcome to 
+      Tennis Match
+  </h2>
+  <a href="newTennis">Go to Page 2</a>
+  <label for="player1"><b>Player 1:</b></label>
+  <input type="text" id="player1" name="player1" placeholder="Enter Player 1's Name">
+  <br>
+  <label for="player2"><b>Player 2:</b></label>
+  <input type="text" id="player2" name="player2" placeholder="Enter Player 2's Name">
+  <br>
+  <button id="startRecording">Start Recording</button>
+  <button id="stopRecording" disabled>Stop Recording</button>
+  <br>
+  <button id="show">Show Matches</button>
+</br>
+</div>
+<script>
+  const startButton = document.getElementById('startRecording');
+  const stopButton = document.getElementById('stopRecording');
+
+  startButton.addEventListener('click', () => {
+    startButton.disabled = true;
+    stopButton.disabled = false;
+    alert("Recording started for both players!");
+  });
+ 
+ 
+  stopButton.addEventListener('click', () => {
+    stopButton.disabled = true;
+    startButton.disabled = false;
+    alert("Recording stopped.");
+   
+  });
+</script>
+</body>
